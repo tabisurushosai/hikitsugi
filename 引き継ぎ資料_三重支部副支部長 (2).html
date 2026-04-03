@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>引き継ぎ資料｜日本学校心理士会 三重支部</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap');
+  :root {
+    --ink:#1a1a2e;--mid:#3a3a5c;--light:#6b6b8a;--accent:#c0392b;--accent2:#2980b9;
+    --bg:#f9f7f4;--white:#ffffff;--border:#d5d0c8;
+    --warn-bg:#fef9e7;--warn-border:#f39c12;
+    --info-bg:#eaf4fb;--info-border:#2980b9;
+    --section-h:#2c3e50;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Noto Sans JP',sans-serif;background:var(--bg);color:var(--ink);line-height:1.9;font-size:15px;}
+  header{background:var(--section-h);color:var(--white);padding:48px 40px 36px;position:relative;overflow:hidden;}
+  header::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(90deg,var(--accent),#e74c3c 50%,var(--accent2));}
+  header .org{font-size:12px;letter-spacing:.2em;color:rgba(255,255,255,.6);margin-bottom:10px;}
+  header h1{font-family:'Noto Serif JP',serif;font-size:26px;font-weight:700;line-height:1.5;margin-bottom:16px;}
+  header .meta{display:flex;gap:16px;flex-wrap:wrap;}
+  header .meta span{font-size:13px;color:rgba(255,255,255,.75);background:rgba(255,255,255,.1);padding:4px 12px;border-radius:20px;}
+  .container{max-width:860px;margin:0 auto;padding:40px 24px 80px;}
+  .toc{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--section-h);border-radius:4px;padding:24px 28px;margin-bottom:40px;}
+  .toc h2{font-size:12px;letter-spacing:.15em;color:var(--light);margin-bottom:12px;}
+  .toc ol{padding-left:20px;}.toc li{margin-bottom:6px;}
+  .toc a{color:var(--accent2);text-decoration:none;font-size:14px;}.toc a:hover{text-decoration:underline;}
+  section{margin-bottom:48px;}
+  .section-header{display:flex;align-items:center;gap:12px;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--border);}
+  .section-num{background:var(--section-h);color:var(--white);font-size:12px;font-weight:700;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  section h2{font-family:'Noto Serif JP',serif;font-size:20px;font-weight:700;color:var(--section-h);}
+  .card{background:var(--white);border:1px solid var(--border);border-radius:6px;padding:20px 24px;margin-bottom:16px;}
+  .card h3{font-size:15px;font-weight:700;color:var(--mid);margin-bottom:10px;padding-bottom:8px;border-bottom:1px dashed var(--border);}
+  .card p,.card li{font-size:14px;color:var(--mid);margin-bottom:6px;}
+  .card ul,.card ol{padding-left:20px;}.card li{margin-bottom:6px;}
+  .role-table{width:100%;border-collapse:collapse;background:var(--white);border-radius:6px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.08);margin-bottom:16px;}
+  .role-table th{background:var(--section-h);color:var(--white);font-size:13px;font-weight:700;padding:12px 16px;text-align:left;}
+  .role-table td{padding:14px 16px;font-size:14px;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.8;}
+  .role-table tr:last-child td{border-bottom:none;}
+  .role-table tr:nth-child(even) td{background:#f5f4f1;}
+  .name-badge{display:inline-block;background:#eaf4fb;color:var(--accent2);font-weight:700;padding:2px 10px;border-radius:12px;font-size:13px;margin-right:4px;}
+  .addr-badge{display:inline-block;font-family:monospace;font-size:13px;background:#f0f0f0;color:#c0392b;padding:2px 8px;border-radius:4px;word-break:break-all;}
+  .callout{border-radius:6px;padding:16px 20px;margin-bottom:16px;border-left:4px solid;}
+  .callout.warn{background:var(--warn-bg);border-color:var(--warn-border);}
+  .callout.info{background:var(--info-bg);border-color:var(--info-border);}
+  .callout .callout-title{font-size:13px;font-weight:700;letter-spacing:.05em;margin-bottom:8px;}
+  .callout.warn .callout-title{color:#b7770d;}.callout.info .callout-title{color:var(--accent2);}
+  .callout p,.callout li{font-size:14px;color:var(--mid);margin-bottom:5px;}
+  .callout ul{padding-left:18px;}
+  .gmail-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px;}
+  @media(max-width:600px){.gmail-grid{grid-template-columns:1fr;}}
+  .gmail-card{background:var(--white);border:2px solid var(--border);border-radius:8px;padding:18px 20px;}
+  .gmail-card.primary{border-color:var(--accent2);}
+  .gmail-card .g-label{font-size:11px;font-weight:700;letter-spacing:.1em;color:var(--light);margin-bottom:6px;}
+  .gmail-card.primary .g-label{color:var(--accent2);}
+  .gmail-card .g-addr{font-family:monospace;font-size:14px;color:#c0392b;font-weight:700;word-break:break-all;margin-bottom:10px;}
+  .gmail-card .g-who{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:6px;}
+  .gmail-card .g-note{font-size:13px;color:var(--mid);line-height:1.7;}
+  /* 審査日程表 */
+  .schedule-table{width:100%;border-collapse:collapse;background:var(--white);margin-bottom:16px;border-radius:6px;overflow:hidden;}
+  .schedule-table th{background:#3d7a5e;color:var(--white);font-size:13px;font-weight:700;padding:10px 16px;text-align:center;}
+  .schedule-table td{padding:10px 16px;font-size:14px;border-bottom:1px solid var(--border);text-align:center;color:var(--mid);}
+  .schedule-table tr:last-child td{border-bottom:none;}
+  .schedule-table tr:nth-child(even) td{background:#f5f4f1;}
+  .pdf-list{list-style:none;padding:0;}
+  .pdf-list li{display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--white);border:1px solid var(--border);border-radius:4px;margin-bottom:8px;font-size:14px;color:var(--mid);}
+  .pdf-icon{background:var(--accent);color:var(--white);font-size:11px;font-weight:700;padding:3px 7px;border-radius:3px;flex-shrink:0;}
+  footer{text-align:center;padding:32px;font-size:12px;color:var(--light);border-top:1px solid var(--border);margin-top:40px;}
+  @media print{header{background:#2c3e50!important;-webkit-print-color-adjust:exact;}.role-table th,.schedule-table th{-webkit-print-color-adjust:exact;}body{font-size:13px;}.container{padding:20px;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="org">日本学校心理士会 三重支部</div>
+  <h1>副支部長業務 引き継ぎ資料</h1>
+  <div class="meta">
+    <span>作成：前副支部長　小瀧</span>
+    <span>2026年</span>
+    <span>安藤先生・西出先生・平井先生へ</span>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="toc">
+    <h2>目次</h2>
+    <ol>
+      <li><a href="#roles">担当分担について</a></li>
+      <li><a href="#gmail">Gmailアカウントについて</a></li>
+      <li><a href="#meibo">名簿データについて</a></li>
+      <li><a href="#annnai">会員への周知・案内について</a></li>
+      <li><a href="#homepage">ホームページについて</a></li>
+      <li><a href="#pdf-apply">本部への申請について</a></li>
+    </ol>
+  </div>
+
+  <!-- 1. 役割分担 -->
+  <section id="roles">
+    <div class="section-header"><div class="section-num">1</div><h2>担当分担について</h2></div>
+    <table class="role-table">
+      <thead>
+        <tr><th style="width:22%">担当の先生</th><th style="width:22%">役職</th><th>主な担当業務</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="name-badge">安藤先生</span></td>
+          <td>副支部長</td>
+          <td>
+            本部（認定機構・東海ブロック等）とのやりとり<br>
+            メールアカウント（<span class="addr-badge">gakkoushinrimie@gmail.com</span>）の管理
+          </td>
+        </tr>
+        <tr>
+          <td><span class="name-badge">西出先生</span></td>
+          <td>担当役員</td>
+          <td>
+            総会・研修会の開催案内を会員へメールで送付<br>
+            会員からの問い合わせへの対応<br>
+            （<span class="addr-badge">gakkoushinrimie2@gmail.com</span> を使用）
+          </td>
+        </tr>
+        <tr>
+          <td><span class="name-badge">平井先生</span></td>
+          <td>担当役員</td>
+          <td>
+            ホームページ（Google Sites）の更新・管理<br>
+            （<span class="addr-badge">gakkoushinrimie2@gmail.com</span> でログインして操作）
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 2. Gmail -->
+  <section id="gmail">
+    <div class="section-header"><div class="section-num">2</div><h2>Gmailアカウントについて</h2></div>
+    <p style="font-size:14px;color:var(--mid);margin-bottom:16px;">三重支部では2つのGmailアカウントを使用しています。</p>
+
+    <div class="gmail-grid">
+      <div class="gmail-card primary">
+        <div class="g-label">① 公式・事務局アカウント（メイン）</div>
+        <div class="g-addr">gakkoushinrimie@gmail.com</div>
+        <div class="g-who">安藤先生が管理するアカウントです</div>
+        <div class="g-note">
+          会員・本部・他支部に広く周知されている公式アドレスです。ゆうちょ振り込み通知、本部からの連絡、会員からの問い合わせがこちらに届きます。<br><br>
+          <strong>Google Authenticator（認証アプリ）と連携しているのはこちらです。</strong>
+        </div>
+      </div>
+      <div class="gmail-card">
+        <div class="g-label">② お知らせ・ホームページ用（サブ）</div>
+        <div class="g-addr">gakkoushinrimie2@gmail.com</div>
+        <div class="g-who">西出先生・平井先生が使用するアカウントです</div>
+        <div class="g-note">
+          会員へのお知らせメール送信と、ホームページの管理に使用するアカウントです。このアカウントにログインするだけで両方の作業ができます。
+        </div>
+      </div>
+    </div>
+
+    <div class="callout warn">
+      <div class="callout-title">⚠️ 安藤先生へ：認証アプリの移行について</div>
+      <p>① gakkoushinrimie@gmail.com はGoogle Authenticator（スマートフォンの認証アプリ）と連携しています。引き継ぎ時に小瀧から安藤先生のスマートフォンへ移行する作業を一緒に行います。</p>
+      <ul style="margin-top:10px;">
+        <li>小瀧のスマートフォンのAuthenticatorアプリで「アカウントの移行」を選びQRコードを表示します</li>
+        <li>安藤先生のスマートフォンでそのQRコードを読み取っていただくだけで完了です</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. 名簿 -->
+  <section id="meibo">
+    <div class="section-header"><div class="section-num">3</div><h2>名簿データについて</h2></div>
+    <div class="card">
+      <h3>安藤先生へ</h3>
+      <ul>
+        <li>最新の名簿データ（会費の支払い状況まで入力済みのもの）は、<strong>会計担当の野口さん</strong>がお持ちです。野口さんからExcelファイルをご入手ください</li>
+        <li>ファイルには会員の氏名・メールアドレス・会費納入状況が含まれています</li>
+        <li>毎年1〜3月ごろ、本部から新入会員・退会会員の情報が届きますので、その都度ファイルを更新してください</li>
+        <li>本部の名簿に登録されているメールアドレスが古い場合がありますので、三重支部が管理しているアドレスを優先してご利用ください</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. 周知案内 -->
+  <section id="annnai">
+    <div class="section-header"><div class="section-num">4</div><h2>会員への周知・案内について</h2></div>
+    <div class="card">
+      <h3>西出先生へ：メール送付の手順</h3>
+      <ol>
+        <li style="margin-bottom:8px;"><strong>ログイン：</strong>gakkoushinrimie2@gmail.com にログインします</li>
+        <li style="margin-bottom:8px;"><strong>送付先の設定：</strong>名簿ExcelにあるメールアドレスをすべてBCC欄に貼り付けてください。To欄は gakkoushinrimie2@gmail.com のままで構いません</li>
+        <li style="margin-bottom:8px;"><strong>送付内容：</strong>研修会の案内（日時・場所・テーマ・ポイント・参加費・申込方法）や総会の開催案内</li>
+        <li><strong>返信への対応：</strong>問い合わせのメールが届いた際はご確認ください。他支部の会員の方が参加を希望される場合は、受講料なしでお受けしています</li>
+      </ol>
+    </div>
+    <div class="callout info">
+      <div class="callout-title">安藤先生へ：問い合わせメールの受信について</div>
+      <p>会員からの返信や問い合わせは ① gakkoushinrimie@gmail.com に届くことが多いです。内容に応じて西出先生や支部長にご共有ください。</p>
+    </div>
+  </section>
+
+  <!-- 5. HP -->
+  <section id="homepage">
+    <div class="section-header"><div class="section-num">5</div><h2>ホームページについて</h2></div>
+
+    <div class="card">
+      <h3>平井先生へ：アクセス方法</h3>
+      <ul>
+        <li>ホームページはGoogle Sitesで作成しています</li>
+        <li><strong>gakkoushinrimie2@gmail.com にログインした状態</strong>で、下記のURLを開けばそのまま編集できます</li>
+      </ul>
+      <div style="margin-top:12px;background:#f0f4f8;border-radius:6px;padding:14px 16px;">
+        <div style="font-size:11px;color:var(--light);font-weight:700;margin-bottom:6px;">ホームページ編集URL</div>
+        <a href="https://sites.google.com/d/1kqTI8wpS7JiFofUO8tRBq2Q25X8ClhiL/p/1qaSdxvE-CU5RJwj5yGKgBYUFCTYx3Srk/edit"
+           target="_blank"
+           style="font-family:monospace;font-size:12px;color:#2980b9;word-break:break-all;">
+          https://sites.google.com/d/1kqTI8wpS7JiFofUO8tRBq2Q25X8ClhiL/p/1qaSdxvE-CU5RJwj5yGKgBYUFCTYx3Srk/edit
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>お知らせページの更新手順</h3>
+      <p style="font-size:13px;color:var(--light);margin-bottom:12px;">研修会・総会のお知らせを追加するときは、既存のテンプレートページをコピーして使ってください。</p>
+      <ol>
+        <li style="margin-bottom:8px;">上記URLを開き、画面右上の鉛筆アイコン（編集ボタン）をクリックします</li>
+        <li style="margin-bottom:8px;">画面左側のページ一覧から、下記の<strong>「雛形ページ」</strong>を右クリック →「コピー」を選択します
+          <div style="margin-top:8px;background:#f0f4f8;border-radius:6px;padding:10px 14px;">
+            <div style="font-size:11px;color:var(--light);font-weight:700;margin-bottom:4px;">雛形ページのURL（参考）</div>
+            <a href="https://sites.google.com/d/1kqTI8wpS7JiFofUO8tRBq2Q25X8ClhiL/p/1dNzqDxoC8zNTkA3_nCXvP4ym_izGY14P/edit"
+               target="_blank"
+               style="font-family:monospace;font-size:12px;color:#2980b9;word-break:break-all;">
+              https://sites.google.com/d/1kqTI8wpS7JiFofUO8tRBq2Q25X8ClhiL/p/1dNzqDxoC8zNTkA3_nCXvP4ym_izGY14P/edit
+            </a>
+          </div>
+        </li>
+        <li style="margin-bottom:8px;">コピーされた新しいページに、日付・タイトル・本文を入力します</li>
+        <li style="margin-bottom:8px;">「ホーム」のお知らせ一覧に、新しいページへのリンクを追加します</li>
+        <li>編集が終わったら、必ず画面右上の<strong>「公開」ボタンを押してください</strong>（押さないとホームページに反映されません）</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 6. 本部申請 -->
+  <section id="pdf-apply">
+    <div class="section-header"><div class="section-num">6</div><h2>本部への申請について</h2></div>
+    <p style="font-size:14px;color:var(--mid);margin-bottom:16px;">研修会を開催するたびに、下記の書類を作成し、本部事務局へ<strong>メールで送付</strong>します。</p>
+
+    <div class="card">
+      <h3>申請に必要な書類（3点）</h3>
+      <p style="font-size:13px;color:var(--mid);margin-bottom:12px;">
+        書類のWordファイルは、<strong>gakkoushinrimie@gmail.com および gakkoushinrimie2@gmail.com 両方のGoogleドライブ</strong>に保存してあります。フォントやレイアウトが崩れないよう、必ずWordファイルを使って編集してください。
+      </p>
+      <ul class="pdf-list" style="list-style:none;padding:0;margin-top:8px;">
+        <li style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px dashed var(--border);font-size:14px;color:var(--mid);">
+          <span class="pdf-icon">1</span>
+          <div><strong>単位認定申請書</strong>（B1該当研修会用）<br><span style="font-size:13px;">研修会の概要・講師・開催場所等を記載</span></div>
+        </li>
+        <li style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px dashed var(--border);font-size:14px;color:var(--mid);">
+          <span class="pdf-icon">2</span>
+          <div><strong>研修会開催要項（案）</strong><br><span style="font-size:13px;">会員向けのお知らせを兼ねた資料</span></div>
+        </li>
+        <li style="display:flex;align-items:center;gap:12px;padding:12px 0;font-size:14px;color:var(--mid);">
+          <span class="pdf-icon">3</span>
+          <div><strong>受講証明書（案）</strong><br><span style="font-size:13px;">承認後に承認番号を記入して当日配布するもの</span></div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="callout warn">
+      <div class="callout-title">⚠️ 大切な注意点</div>
+      <ul>
+        <li>開催要項の印刷・配布は、本部から<strong>承認の連絡が届いた後</strong>に行ってください</li>
+        <li>受講証明書には必ず<strong>承認番号を記入</strong>してください（記入がないと会員のポイントとして認められない場合があります）</li>
+        <li>講師の先生が学校心理士の場合は、講師証明書（Cポイント申請）も合わせて作成してください</li>
+        <li>申請書の様式は本部ホームページ（下記）からダウンロードできます</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>送付先メールアドレス</h3>
+      <p style="font-size:15px;"><strong>office@gakkoushinrishi.jp</strong></p>
+      <p style="font-size:13px;margin-top:4px;color:var(--light);">一般社団法人 学校心理士認定運営
